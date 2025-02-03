@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('./images/background.jpeg');
+    background-image: url('../images/background.jpeg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -157,4 +157,10 @@ body {
 #smart_thermo_img{
   width: 400px;
   height: 250px;
+}
+
+.footer_det{
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
