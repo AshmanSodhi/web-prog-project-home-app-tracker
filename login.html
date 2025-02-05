@@ -3,26 +3,35 @@
 <head>
   <title>Login - Appliance Tracker</title>
   <link rel="stylesheet" href="style/styles.css">
+  <script src="./js/functions.js"></script>
 </head>
+
 <body>
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
+    <p>Home Appliance Tracker</p>
+    <a class="active" href="homepage.html">Home</a>
     <a href="login.html">Login</a>
     <a>Contact</a>
     <a>About</a>
   </div>
   <div class="container">
     <h2>Login</h2>
-    <form>
+    <form name="login_form">
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
 
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
 
-      <button type="submit" class="btn"><a href="login-success.html" class="button_color">Login</a></button>
+      <button type="button" class="btn"><a class="button_color" onclick="ValidateEmailPwd()">Login</a></button>
     </form>
     <p>Don't have an account? <a href="register.html">Register here</a></p>
   </div>
+
+  <br>
+
+  <footer class="footer_det">
+    <p>Ashman Sodhi - 23BDS0068 - Web Programming</p>
+  </footer> 
 </body>
 </html>
