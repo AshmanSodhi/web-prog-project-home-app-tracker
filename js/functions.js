@@ -49,3 +49,5 @@ function ValidateNameEmailPwd(){
     
     window.location.href = "reg-success.html";
 }
+
+

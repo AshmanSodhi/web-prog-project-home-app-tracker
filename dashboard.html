@@ -26,19 +26,33 @@
             background-color: #4CAF50;
             color: white;
         }
+
+        .drag-over {
+            background-color: #e9ecef;
+        }
+
+        tbody tr {
+            cursor: move;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f9fa;
+        }
     </style>
+    <script src="./js/dashboardDrag.js"></script>
 </head>
 <body>
     <div class="topnav">
         <img class="logo" src="./images/icon.png" alt="Logo" style="height: 40px;">
-        <p>Home Appliance Tracker</p>
-        <a class="active" href="dashboard.html">Home</a>
-        <a href="homepage.html">Logout</a>
-        <a>Contact</a>
-        <a href="about.html">About</a>
-      </div>
+        <p>Home Smart Appliance Tracker</p>
+        <a class="active" href="homepage.html">Home</a>
+        <a class="nbAct" href="login.html">Login</a>
+        <a class="nbAct">Contact</a>
+        <a href="about.html" class="nbAct">About</a>
+    </div>
     <div class="container">
         <h2>Dashboard</h2>
+        <div id="demo"></div>
         <table>
             <thead>
                 <tr>
@@ -48,32 +62,32 @@
                     <th>Energy Consumption (kWh)</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody id="applianceTableBody">
+                <tr id="row1" draggable="true" class="droppable-row">
                     <td>Refrigerator</td>
                     <td>Kitchen</td>
                     <td>On</td>
                     <td>2.5</td>
                 </tr>
-                <tr>
+                <tr id="row2" draggable="true" class="droppable-row">
                     <td>Air Conditioner</td>
                     <td>Bedroom</td>
                     <td>Off</td>
                     <td>1.8</td>
                 </tr>
-                <tr>
+                <tr id="row3" draggable="true" class="droppable-row">
                     <td>Washing Machine</td>
                     <td>Laundry Room</td>
                     <td>On</td>
                     <td>1.2</td>
                 </tr>
-                <tr>
+                <tr id="row4" draggable="true" class="droppable-row">
                     <td>Television</td>
                     <td>Living Room</td>
                     <td>On</td>
                     <td>0.8</td>
                 </tr>
-                <tr>
+                <tr id="row5" draggable="true" class="droppable-row">
                     <td>Microwave</td>
                     <td>Kitchen</td>
                     <td>Off</td>
@@ -85,5 +99,6 @@
     <footer class="footer_det">
         <p>Ashman Sodhi - 23BDS0068 - Web Programming</p>
     </footer>   
+    <script src="./js/navBar.js"></script>
 </body>
 </html>
